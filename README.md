@@ -11,21 +11,11 @@
 
 This challenge was organized by Techavilly to help upcoming data Analyst in their Data analytics journey. We worked with different datasets which will be shared below with their respective questions and output.
 
-### Links to the Datasets
-- [Runners](https://techavilly.net/wp-content/uploads/2023/10/runners.xlsx)
-- [Customer orders](https://techavilly.net/wp-content/uploads/2023/10/customer_orders.xlsx)
-- [Runner orders](https://techavilly.net/wp-content/uploads/2023/10/runner_orders.xlsx)
-- [Pizza names](https://techavilly.net/wp-content/uploads/2023/10/pizza_names.xlsx)
-- [Pizza recipe](https://techavilly.net/wp-content/uploads/2023/10/pizza_recipe.xlsx)
-- [Pizza toppings](https://techavilly.net/wp-content/uploads/2023/10/pizza_toppings-.xlsx)
-- [Movie Data - Movie Data](https://techavilly.net/wp-content/uploads/2023/03/Movie-Data.zip)
-- [Sample Superstore Data - Sample Superstore](https://techavilly.net/wp-content/uploads/2023/04/Sample-Superstore-Complete.xlsx)
-- [Bonus table(link to download)](https://yvzdlz.clicks.mlsend.com/te/cl/eyJ2Ijoie1wiYVwiOjM0NTkxOCxcImxcIjoxMDI1OTE0NjU3NzU5NTcxMzAsXCJyXCI6MTAyNTkxNDY5NTg4NTc5NTI0fSIsInMiOiI3N2ExMjhjYTNiMmE0OTVlIn0)
-- [Share Price data](https://techavilly.net/wp-content/uploads/2023/10/SharePrice-.xlsx)
-- [Employee Table](https://techavilly.net/wp-content/uploads/2023/10/Employee-Table.xlsx)
+### Link to the Datasets
+- [Data](https://1drv.ms/x/s!Aum1pK9wiIgycuwfzy4fWPOIxZs?e=zZtmbD)
 
 ### Tool
-Mysql Server [Download here](https://dev.mysql.com/downloads/windows/installer/8.0.html)
+Microsoft 2016 [Download here]([https://dev.mysql.com/downloads/windows/installer/8.0.html](https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-office-2019-office-2016-or-office-2013-7c695b06-6d1a-4917-809c-98ce43f86479))
 
 ### Questions and Queries
 
@@ -37,7 +27,8 @@ select original_title from Movie_data
 where release_date between '2017-01-01' and '2017-12-31'
 and vote_count > 15 and runtime > 100;
 ```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/6fe0451f-d7a6-41ba-b29d-e57909e27a6a)
+![image](![image](https://github.com/user-attachments/assets/ab9cfc83-5dba-47a5-a6ab-1bf499b24482)
+)
 
 **Day 2 Question**: Using the pizza Data, write a query to show how many pizzas were ordered.
 #### Query
