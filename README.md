@@ -1,15 +1,15 @@
 # Wunmi's portfolio
 
 ## Table of Content
-- [30days SQL Challenge](#30days-sql-challenge)
+- [30days Excel Challenge](#30days-excel-challenge)
 - [Links to the Datasets](#links-to-the-datasets)
 - [Tool](#tool)
-- [Questions and Queries](#questions-and-queries)
+- [Questions and Output](#questions-and-output)
 
-## 30days SQL Challenge
+## 30days Excel Challenge
 ---
 
-This challenge was organized by Techavilly to help upcoming data Analyst in their Data analytics journey. We worked with different datasets which will be shared below with their respective questions and queries.
+This challenge was organized by Techavilly to help upcoming data Analyst in their Data analytics journey. We worked with different datasets which will be shared below with their respective questions and output.
 
 ### Links to the Datasets
 - [Runners](https://techavilly.net/wp-content/uploads/2023/10/runners.xlsx)
