@@ -15,7 +15,7 @@ This challenge was organized by Techavilly to help upcoming data Analyst in thei
 - [Data](https://1drv.ms/x/s!Aum1pK9wiIgycuwfzy4fWPOIxZs?e=zZtmbD)
 
 ### Tool
-Microsoft 2016 [Download here]([https://dev.mysql.com/downloads/windows/installer/8.0.html](https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-office-2019-office-2016-or-office-2013-7c695b06-6d1a-4917-809c-98ce43f86479))
+Microsoft 2016 [Download here]([https://dev.mysql.com/downloads/windows/installer/8.0.html](https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-office-2019-office-2016-or-office-2013-7c695b06-6d1a-4917-809c-98ce43f86479)
 
 ### Questions and Queries
 
