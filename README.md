@@ -19,16 +19,12 @@ Microsoft 2016 [Download here](https://support.microsoft.com/en-us/office/downlo
 
 ### Questions and Queries
 
-**Day 1 Question**: Using the movie Data, write a query to show the titles and movie released in 2017 whose vote count is more than 15 and runtime is more than 100.
-#### Query
-```sql
---title where release year is 2017, vote count > 15 and runtime > 100
-select original_title from Movie_data
-where release_date between '2017-01-01' and '2017-12-31'
-and vote_count > 15 and runtime > 100;
-```
+**Day 1 Question**
 ![image](https://github.com/user-attachments/assets/ab9cfc83-5dba-47a5-a6ab-1bf499b24482)
-)
+
+#### Output
+![image](https://github.com/user-attachments/assets/23f0016a-71d6-44b3-b8c5-156c35facfa8)
+
 
 **Day 2 Question**: Using the pizza Data, write a query to show how many pizzas were ordered.
 #### Query
