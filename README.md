@@ -20,7 +20,8 @@ Microsoft 2016 [Download here](https://support.microsoft.com/en-us/office/downlo
 ### Questions and Queries
 
 **Day 1 Question**
-![image](https://github.com/user-attachments/assets/ab9cfc83-5dba-47a5-a6ab-1bf499b24482)
+![image](https://github.com/user-attachments/assets/8586555c-a595-438e-af8a-fc5ec571a4e1)
+
 
 #### Output
 ![image](https://github.com/user-attachments/assets/23f0016a-71d6-44b3-b8c5-156c35facfa8)
