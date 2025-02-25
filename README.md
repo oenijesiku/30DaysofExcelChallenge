@@ -1,4 +1,4 @@
-# Wunmi's portfolio
+![image](https://github.com/user-attachments/assets/ab2e8e97-d645-4552-a4f6-74bd0445ce01)# Wunmi's portfolio
 
 ## Table of Content
 - [30days Excel Challenge](#30days-excel-challenge)
@@ -22,176 +22,35 @@ Microsoft 2016 [Download here](https://support.microsoft.com/en-us/office/downlo
 **Day 1 Question**
 ![image](https://github.com/user-attachments/assets/8586555c-a595-438e-af8a-fc5ec571a4e1)
 
-
 #### Output
 ![image](https://github.com/user-attachments/assets/23f0016a-71d6-44b3-b8c5-156c35facfa8)
 
+**Day 2 Question**
+![image](https://github.com/user-attachments/assets/e6361f0a-e4fb-4a25-9024-ad7de79ad336)
 
-**Day 2 Question**: Using the pizza Data, write a query to show how many pizzas were ordered.
-#### Query
-```sql
---The count of the all customer's(pizza) order
-select count(*) as total_pizza_ordered from customer_orders
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/592e4f4c-0225-432f-8cf3-a2567cc4b73e)
+#### Output
+![image](https://github.com/user-attachments/assets/dee49b53-4de4-433c-9865-8ad0a008c147)
 
-**Day 3 Question**: Using the Pizza Data, write a query to show How many successful orders were delived by each runner?
-#### Query
-```sql
---Select runner_id and count for all record with an alias
-select runner_id, count(*) as number_of_successful_order from runner_orders
+**Day 3 Question**
+![image](https://github.com/user-attachments/assets/c57fc606-6905-438f-bc2e-701f410c505b)
 
---To get the number of successful order, we filter using the where clause
-where pickup_time is not null 
-	and cancellation is null
-	
---We proceed to group by runner_id since we need an aggregate
-group by runner_id
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/669f4df4-a7e4-4af3-b162-134da633c0e0)
+#### Output
+![image](https://github.com/user-attachments/assets/ea8c44b2-cfcf-4138-bb13-c1fb0b9a7e2e)
 
-To get the number of successful orders, I filtered using pickup time and cancellation. I added cancellation as a condition because the pizza might have been picked up and canceled by a customer if delivery was delayed.
+**Day 4 Question**
 
-**Day 4 Question**: Write a query to show the top 10 movie titles whose language is English and French and the budget is more than 1,000,000.
-#### Query
-```sql
---select the first 10 original title and alias as title
-select top 10 original_title as title
+**Day 5 Question**
 
---from the movie data set
-from movie_data
+**Day 6 Question**
 
---filter the language column using the where clause for English and French
-where original_language in ('en','fr')
+**Day 8 Question**
 
---use the and command in conjunction with the where clause to filter for budget above 1 million
-and budget > '1,000,000'
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/2b585446-e797-4fe3-b720-f64c73011e41)
+**Day 9 Question**
+**Day 10 Question**
 
-**Day 5 Question**: Using the Pizza Data, Write a query to show the number of each type of pizza was delivered.
-#### Query
-```sql
--- select pizza name and its count alias as pizza_deliveries 
-select pizza_name, count(pizza_name) as pizza_deliveries
+**Day 11 Question**
 
---write a join statement to combine pizza name, customers order and runners order in a table
-from pizza_names as pn
-join customer_orders as co
-on pn.pizza_id = co.pizza_id
-join runner_orders as ro
-on co.order_id = ro.order_id
-
---Filter using the where statement
-where cancellation is null
-
---Group by pizza_name for an aggregate for each pizza name
-group by pizza_name
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/7477e748-b8c5-400d-a924-484b2daf3a39)
-
-**Day 6 Question**: The Briggs company wants to ship some of their products to customers in selected cities but they want to know the average days it'll take to deliver those items to Dallas, Los Angeles, Seattle and Madison. Using Sample Superstore data, write a query to show the average delivery days to those cities. Only show the City and Average delivery days columns in your output.
-#### Query
-```sql
---Select city and calculate the average delivery days
-select city, avg(datediff(day, Order_Date, Ship_Date)) as avg_delivery_days
-
---From the Sample superstore dataset
-from Sample_Superstore_Complete
-
---filter for the required countries
-where City in ('Dallas', 'Los Angeles','Seattle','Madison')
-
---Group by city
-group by city
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/1d7027bf-a59a-4778-b1fc-5a18eb40a2d4)
-
-**Day 8 Question**: It's getting to the end of the year and The Briggs Company wants to reward the customer who made the highest sales ever. Using the Sample Super Store, write a query to help the company identify this customer and category of business driving the sales. Let your output show the customer Name, the Category and the total sales. Round the total sales to the nearest whole number.
-#### Query
-```sql
---Select the customer and category with the highest sales as an integer
-select top 1 Customer_Name, category, cast(sum(Sales) as integer) as total_sales
-
---from the Sample Superstore dataset
-from Sample_Superstore_Complete
-
---Group by Customer name and category
-group by Customer_Name, category
-
---Order by total_sales
-order by total_sales desc
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/2fd79050-1bb9-4f1c-8912-21955fc21c02)
-
-**Day 9 Question**: The Briggs Company has 3 categories of business generating revenue for the company. They want to know which of them is driving the business. Write a query to show the total sales and percentage contribution by each category. Show Category, Total Sales and Percentage contribution columns in your output.
-#### Query
-```sql
-select category, 
-		sum(sales) as total_sales, 
-		(sum(sales)/(select sum(sales)from Sample_Superstore_Complete)) *100 as perc_contribution
-from Sample_Superstore_Complete
-group by category
-order by perc_contribution desc
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/3672208c-85ef-41c2-a3a7-d086daf7c491)
-
-**Day 10 Question**: After seeing the Sales by Category, the Briggs company became curious and wanted to dig deeper to see which subcategory is selling the most. They need the help of an analyst. Please help the company to write a query to show the sub category and the Total sales of each sub category. Let your query display only the Subcategory and the Total sales columns to see which product sells the most.
-#### Query
-```sql
---Select the sub-category and total sales
-select Sub_category, round(sum(Sales), 2) as total_sales
-
---from the Sample Superstore dataset
-from Sample_Superstore_Complete
-
---Group by sub-category
-group by Sub_category
-
---Order by total_sales
-order by total_sales desc
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/123cd6a3-bade-4f44-bdcf-11fb7d16f91a)
-
-**Day 11 Question**: Now that you've identified phones as the business driver in terms of revenue. The company wants to know the total "phones sales" by year to understand how "each year" performed. As the Analyst, please help them to show the breakdown of the total sales by year in descending order. Let your output show only Total sales and Sales year column.
-#### Query
-```sql
---select year from order date and sum of sales rounding up to 2D.P
-select year (order_date) as Sales year, round(sum (Sales), 2) as Total_sales
-
---from the required dataset
-from Sample_Superstore_Complete
-
---filter the sub category for phones
-where Sub Category "Phones"
-
---group by year from order date
-group by year(order_date)
-
---order by total sales
-order by Total_sales desc
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/5bfb0d09-2dc4-417a-a5f9-b77c12fd06cd)
-
-**Day 12 Question**: The Director of Analytics has requested a detailed analysis of the Briggs Company. To fulfill this request, he needs you to generate a table that displays the profit margin of "each segment". The table should include the segments, total sales, total profit and the profit margin. To ensure accuracy, the profit margin should be arranged in descending order.
-#### Query
-```sql
---select segment, sum of sales, profit and a calculation for profit margin rounding up to 2D.P
-select Segment,
-		round(sum(Sales), 2) as Total_sales, 
-		round(sum(Profit), 2) as Total_profit, 
-		round((sum(Profit)/sum(Sales) * 100), 2) as Profit_margin
-
---from the required dataset
-from Sample_Superstore_Complete
-
---group by segment
-group by Segment
-
---order by profit_margin
-order by Profit_margin desc
-```
-![image](https://github.com/oenijesiku/Wunmi_portfolio/assets/87021092/ba3f983e-b5da-49ec-989f-564cab932a18)
+**Day 12 Question**
 
 **Day 13 Question**: As we conclude the analysis for The Briggs Company, they got some reviews on their website regarding their new product. Please use the Bonus table to write a query that returns only the meaningful reviews. These are reviews that are readable in English. There are two columns in the table, let your output return only the review column.
 #### Query
