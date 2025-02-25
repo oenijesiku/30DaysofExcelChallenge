@@ -27,7 +27,7 @@ select original_title from Movie_data
 where release_date between '2017-01-01' and '2017-12-31'
 and vote_count > 15 and runtime > 100;
 ```
-![image](![image](https://github.com/user-attachments/assets/ab9cfc83-5dba-47a5-a6ab-1bf499b24482)
+![image](https://github.com/user-attachments/assets/ab9cfc83-5dba-47a5-a6ab-1bf499b24482)
 )
 
 **Day 2 Question**: Using the pizza Data, write a query to show how many pizzas were ordered.
